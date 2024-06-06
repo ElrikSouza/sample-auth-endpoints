@@ -49,7 +49,7 @@ func (g *GitAuthService) GetLoginUrl() string {
 	return redirectUrl
 }
 
-func (g *GitAuthService) GetUserGitInfo(callbackCode string, w io.Writer) (ShortGithubUser, error) {
+func (g *GitAuthService) GetUserGitInfo(callbackCode string) (ShortGithubUser, error) {
 	var user ShortGithubUser
 
 	body := map[string]string{
