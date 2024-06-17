@@ -18,8 +18,8 @@ type UserDataHandler interface {
 }
 
 type ShortGithubUser struct {
-	Id   string `json:"id"`
 	Name string `json:"name"`
+	Id   int    `json:"id"`
 }
 
 type GitAuthService struct {
